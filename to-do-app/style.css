@@ -1,0 +1,93 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+body{
+    background-color: rgb(90, 166, 168);
+}
+
+.container{
+    width: 100%;
+    max-width: 500px;
+    display: flex;
+    justify-content: center;
+    margin: 100px auto 100px;
+    background-color: rgb(236, 230, 230);
+    padding: 10px 20px;
+    border-radius: 20px;
+}
+.task-text input{
+    width: 300px;
+    height: 30px;
+    border-radius: 20px;
+    border: 0 solid white;
+    border-color:white ;
+    background-color: white;
+    padding: 10px 20px;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.task-text h1{
+    color: rgb(133, 134, 134);
+    margin: auto;
+}
+.task-text button{
+    height: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 15px;
+    padding-bottom: 28px;
+    border-radius: 20px;
+    border: 0 solid white;
+    background-color: rgb(255, 255, 255);
+    cursor: pointer;
+    color: rgb(117, 119, 119);
+    font-family: Impact;
+    
+    
+}
+ul li{
+    font-size: 18px;
+    margin-top:20px ;
+    margin-left: 20px;
+    font-family: impact;
+    color:rgb(133, 134, 134) ;
+    user-select: none;
+    cursor: pointer;
+    list-style: none;
+    position: relative;
+}
+ul li::before{
+    content: '';
+    position: absolute;
+    top: 0px;
+    left: -30px;
+    background-image: url(image/radio.png);
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+    height: 28px;
+    width: 28px;
+}
+ul li.checked{
+    text-decoration: line-through;
+    color: black;
+}
+ul li.checked::before{
+    background-image: url(image/check-mark.png);
+    
+}
+ul li span {
+    position: absolute;
+    right: 0px;
+    top: -10px;
+    width: 40px;
+    height: 40px;
+    font-size: 22px;
+    color: #555;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 20px;
+}
+ul li span:hover{
+    background-color: bisque;
+}
